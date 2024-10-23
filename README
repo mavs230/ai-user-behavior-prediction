@@ -1,0 +1,49 @@
+AI & ML Project: User Behavior Classification Project Overview
+
+This project aims to develop machine learning models to classify user behavior based on various features derived from mobile device usage. By analyzing user data, we can identify patterns that help in understanding user engagement and behavior across different demographics. Dataset Description
+
+The dataset used for this project consists of user behavior data collected from mobile devices. It includes the following key features:
+
+User ID: Unique identifier for each user.
+Device Model: The model of the device used.
+Operating System: The operating system running on the device (Android/iOS).
+App Usage Time (min/day): Average daily usage time of apps in minutes.
+Screen On Time (hours/day): Average daily screen-on time in hours.
+Battery Drain (mAh/day): Average battery drain experienced daily.
+Number of Apps Installed: Total number of apps installed on the device.
+Data Usage (MB/day): Average daily data usage in megabytes.
+Age: Age of the user.
+Gender: Gender of the user.
+User Behavior Class: Classification label for user behavior.
+
+Analysis Performed
+
+Data Exploration: Conducted an exploratory data analysis (EDA) to understand the dataset, including checking for missing values, statistical summary, and correlations between features.
+Model Training: Trained various machine learning models including Logistic Regression, Decision Tree, and Random Forest classifiers to predict user behavior.
+Hyperparameter Tuning: Implemented hyperparameter tuning for the Random Forest model to optimize performance.
+
+Key Findings:
+
+Fit Failures: A total of 120 fits failed out of 300 during model training.
+    91 failures due to the invalid parameter 'max_features' set to 'auto' in RandomForestClassifier.
+    29 failures related to the same 'max_features' issue.
+Warnings: Non-finite test scores were encountered, indicating some model configurations did not produce valid metrics.
+Best Parameters for Random Forest Model:
+    n_estimators: 50
+    min_samples_split: 10
+    min_samples_leaf: 4
+    max_features: 'sqrt'
+    max_depth: 10
+Best Model Accuracy: The best Random Forest model achieved an accuracy of 1.0.
+
+Conclusions Drawn
+
+The Random Forest classifier demonstrated perfect accuracy, although further investigation into the fit failures and model validation is necessary to ensure robustness. Future work may involve refining the model and exploring additional features to enhance predictive performance. How to Run the Code
+
+Ensure you have Python installed (preferably version 3.10 or later).
+Install the required packages using:
+pip install pandas scikit-learn matplotlib
+
+Clone the repository and run the main script: git clone cd python .py License
+
+This project is licensed under the MIT License.
