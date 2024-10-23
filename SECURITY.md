@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability, please report it to us via email at simo_mauro20@yahoo.com or through the GitHub issues tracker. 
+If you discover a security vulnerability, please report it to me via email at simo_mauro20@yahoo.com or through the GitHub issues tracker. 
 
 Please include the following information:
 
